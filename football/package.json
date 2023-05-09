@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "axios": "^1.4.0",
+    "font-awesome": "^4.7.0",
     "sass": "^1.62.1",
     "scss": "^0.2.4",
     "vue": "^3.2.47"
