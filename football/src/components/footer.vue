@@ -27,15 +27,33 @@ export default {
         </div>
       </div>
       <div class="col-5 subscribe">
-        <h4>Join Our Newsletter</h4>
-        <div>Subscribe to be informed about important developments in our club and football world.</div>
+        <h5>Join Our Newsletter</h5>
+        <div class="join">Subscribe to be informed about important developments in our club and football world.</div>
         <div>
           <input class="search" type="text" placeholder="Your Email Address">
         </div>
-        <div></div>
+        <div>
+          <button>subscribe</button>
+        </div>
       </div>
-      <div class="col-2"></div>
-      <div class="col-2"></div>
+      <div class="col-2 info">
+        <h5>Education</h5>
+        <ul>
+          <li>FIXTURES & RESULTS</li>
+          <li>EAGUE TABLE</li>
+          <li>PLAYERS</li>
+          <li>GALLERY</li>
+        </ul>
+      </div>
+      <div class="col-2 info">
+        <h5>Quick Links</h5>
+        <ul>
+          <li>FIXTURES & RESULTS</li>
+          <li>EAGUE TABLE</li>
+          <li>PLAYERS</li>
+          <li>GALLERY</li>
+        </ul>
+      </div>
     </div>
     <div class="row copy text-center mt-3 text-white">
       <span>© 2023 Football Club - All Rights Reserved.</span>
@@ -81,12 +99,58 @@ export default {
       }
       }
     }
-    .subscribe{
+  .subscribe{
       input{
         width: 100%;
-        height: 30px;
+        height: 50px;
+        padding: 0 30px;
+        background: #fff;
+        border-radius: 2rem;
+        margin-bottom: 5px;
+      }
+      .join{
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      button{
+        width: 100%;
+        line-height: 50px;
+        display: inline-block;
+        background: #fff;
+        color: #062860;
+        border: 1px solid;
+        padding: 0 30px;
+        position: relative;
+        font-size: 17px;
+        border-radius: 2rem;
       }
     }
+  .info{
+    ul{
+      margin-left: -30px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    li{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
+      font-size: 7px;
+      &::before {
+        content: "";
+        width: 11px;
+        height: 4px;
+        display: inline-block;
+        background: #ffffff;
+        margin-right: 9px;
+      }
+    }
+  }
   }
   .copy {
     font-size: 11px;
