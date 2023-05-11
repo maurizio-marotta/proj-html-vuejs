@@ -1,13 +1,36 @@
 <script>
+import liveVue from './main-container/live.vue'
+import articleVue from './main-container/article.vue'
+import leagueTableVue from './main-container/league-table.vue'
+import playersVue from './main-container/players.vue'
+import calendarVue from './main-container/calendar.vue'
+
+
+
+
 export default {
-  name : 'main'
+  name : 'main',
+  components: {
+    liveVue,
+    articleVue,
+    leagueTableVue,
+    playersVue,
+    calendarVue
+  }
 }
 </script>
 
 <template>
-  <h1>ciao</h1>
+  <div>
+
+    <liveVue />
+    <calendarVue />
+    <playersVue />
+    <league-table-vue />
+    <articleVue />
+  </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
