@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="header">
-    <div class="container ">
+    <div class="container d-flex ">
       <div class="top-bar">
         <a href="" class="logo sponsor"><img src="../assets/sponsor1.png" alt=""></a>
         <a href="" class="logo sponsor"><img src="../assets/sponsor2.png" alt=""></a>
@@ -40,6 +40,10 @@ export default {
   height: 30%;
 }
 
+.top-bar{
+  margin-left: -110px;
+}
+
 .sponsor{
   margin-top: 5%;
 }
@@ -58,6 +62,7 @@ export default {
 }
 
 .bottom-bar{
+  margin: 0, auto;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -65,6 +70,7 @@ export default {
 }
 
 .bottom-bar a{
+  margin: 0px 30px 0px 30px;
   font-weight: bold;
   display: block;
   padding: 10px;
