@@ -7,7 +7,6 @@ import calendarVue from './main-container/calendar.vue'
 
 
 
-
 export default {
   name : 'main',
   components: {
@@ -22,7 +21,6 @@ export default {
 
 <template>
   <div>
-
     <liveVue />
     <calendarVue />
     <playersVue />
