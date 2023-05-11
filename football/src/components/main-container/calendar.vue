@@ -6,7 +6,7 @@ export default {
 </script>
 <template>
   <div>
-    <div class="container-top"></div>
+    <h2>Upcoming Matchs</h2>
   </div>
 </template>
 
