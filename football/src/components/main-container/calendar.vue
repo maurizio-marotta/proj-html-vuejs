@@ -92,7 +92,6 @@ export default {
     color: white;
     padding: 20px;
     background-image: url(../../assets/saha.jpg);
-    background-repeat: no-repeat;
     background-position: center; 
     background-size: auto 100%;
 }
