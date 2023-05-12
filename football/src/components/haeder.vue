@@ -13,7 +13,7 @@ export default {
             <a href="" class="logo sponsor"
               ><img src="../assets/sponsor1.png" alt=""
             /></a>
-            <a href="" class="logo sponsor"
+            <a href="" class="logo sponsor nike"
               ><img src="../assets/sponsor2.png" alt=""
             /></a>
             <a href="" class="logo football"
@@ -106,9 +106,14 @@ export default {
 .sponsor {
   margin-top: 5%;
 }
+.nike{
+  margin-right: -65px;
+  position: sticky;
+  z-index: 1;
+}
 
 .social {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   margin-top: 5%;
 }

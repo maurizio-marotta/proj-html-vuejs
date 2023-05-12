@@ -98,6 +98,11 @@ export default {
             width: 280px;
             border-radius: 3rem;
             position: relative;
+            transition: all .2s ease-in-out;
+            &:hover{
+              cursor: pointer;
+              transform: scale(1.1); 
+            }
           }
           .caption {
             height: 90px;
@@ -109,6 +114,11 @@ export default {
             text-align: center;
             padding: 18px;
             z-index: 1;
+            transition: all .2s ease-in-out;
+            &:hover{
+              cursor: pointer;
+              transform: scale(1.1); 
+            }
             .number{
               justify-content: center;
               font-size: 20px;

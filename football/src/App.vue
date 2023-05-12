@@ -15,13 +15,13 @@ export default {
 </script>
 
 <template>
-  <div id="cursor">
+  <div>
     <headerVue />
     <mainVue />
     <footerVue />
-  </div>  
+  </div>
 </template>
 
 <style lang="scss" scoped>
-  
+
 </style>

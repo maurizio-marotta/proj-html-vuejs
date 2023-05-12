@@ -20,17 +20,22 @@ export default {
         <div class="email">
           <i class="fa-solid fa-envelope"></i>example@example.com
         </div>
-        <div class="social d-flex ">
-          <a href="#" class="border"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#" class="border"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="border"><i class="fa-brands fa-twitter"></i></a>
+        <div class="social d-flex">
+          <a href="#" class="borders"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="#" class="borders"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="borders"><i class="fa-brands fa-twitter"></i></a>
         </div>
       </div>
       <div class="col-5 subscribe">
         <h5>Join Our Newsletter</h5>
-        <div class="join">Subscribe to be informed about important developments in our club and football world.</div>
+        <div class="join">
+          Subscribe to be informed about important developments in our club and
+          football world.
+        </div>
         <div>
-          <input class="search" type="text" placeholder="Your Email Address">
+          <input class="search" type="text" placeholder="Your Email Address" />
         </div>
         <div>
           <button>subscribe</button>
@@ -65,7 +70,7 @@ export default {
 .root {
   background-image: url(../assets/footer-bg-football.jpg);
   .contacts {
-    i{
+    i {
       margin-right: 10px;
     }
     .logo-container {
@@ -75,64 +80,63 @@ export default {
       }
     }
 
-    .position{
+    .position {
       margin-bottom: 10px;
     }
 
-    .call{
+    .call {
       margin-bottom: 10px;
     }
 
-    .email{
+    .email {
       margin-bottom: 10px;
     }
     .social {
       text-align: center;
       font-size: 20px;
       gap: 5px;
-      a{
+      a {
         flex: 1;
-        }
-      i{
+      }
+      i {
         margin: 0;
         color: white;
       }
-      }
     }
-  .subscribe{
-      input{
-        width: 100%;
-        height: 50px;
-        padding: 0 30px;
-        background: #fff;
-        border-radius: 2rem;
-        margin-bottom: 5px;
-      }
-      .join{
-        font-size: 12px;
-        margin-bottom: 15px;
-      }
-      button{
-        width: 100%;
-        line-height: 50px;
-        display: inline-block;
-        background: #fff;
-        color: #062860;
-        border: 1px solid;
-        padding: 0 30px;
-        position: relative;
-        font-size: 17px;
-        border-radius: 2rem;
-      }
+  }
+  .subscribe {
+    input {
+      width: 100%;
+      height: 50px;
+      padding: 0 30px;
+      background: #fff;
+      border-radius: 2rem;
+      margin-bottom: 5px;
     }
-  .info{
-    ul{
+    .join {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      line-height: 50px;
+      display: inline-block;
+      background: #fff;
+      border: 1px solid;
+      padding: 0 30px;
+      position: relative;
+      font-size: 17px;
+      border-radius: 2rem;
+    }
+  }
+  .info {
+    ul {
       margin-left: -30px;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
-    li{
+    li {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -151,9 +155,17 @@ export default {
       }
     }
   }
-  }
-  .copy {
-    font-size: 11px;
+}
+.copy {
+  font-size: 11px;
+}
+
+.borders {
+  border: 1px solid white;
+}
+.borders:hover{
+    border: 1px solid rgba(128, 128, 128, 0);
+    transition: .5s;
   }
 
 </style>

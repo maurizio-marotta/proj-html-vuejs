@@ -30,7 +30,7 @@ export default {
         </div>
         <div class="cards col-3">
           <div class="image d-flex">
-            <img src="../../assets/news1-1.png" alt="" />
+            <img src="../../assets/news2-1.png" alt="" />
           </div>
           <span class="d-flex data">29.05.2022-football</span>
           <h4 class="d-flex title">What is Football</h4>
@@ -41,7 +41,7 @@ export default {
         </div>
         <div class="cards col-3">
           <div class="image d-flex">
-            <img src="../../assets/news1-1.png" alt="" />
+            <img src="../../assets/news3-1.png" alt="" />
           </div>
           <span class="d-flex data">29.05.2022-football</span>
           <h4 class="d-flex title">What is Football</h4>
@@ -52,7 +52,7 @@ export default {
         </div>
         <div class="cards col-3">
           <div class="image d-flex">
-            <img src="../../assets/news1-1.png" alt="" />
+            <img src="../../assets/news4-1.png" alt="" />
           </div>
           <span class="d-flex data">29.05.2022-football</span>
           <h4 class="d-flex title">What is Football</h4>
