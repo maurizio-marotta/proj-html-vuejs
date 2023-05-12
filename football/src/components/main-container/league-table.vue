@@ -1,15 +1,147 @@
 
 <script>
 export default {
-  name: 'article',
-}
+  name: "article",
+};
 </script>
 <template>
-  <div>
-    <div class="container-top"></div>
+  <div class="container">
+    <div class="row">
+      <div class="colonna col-md-6">
+        <div class="container-title d-flex"><strong>League Table</strong></div>
+        <table class="tb">
+          <tbody class="tbd">
+            <tr class="head">
+              <th class="club">Team</th>
+              <th class="pt text-center">W</th>
+              <th class="pt text-center">D</th>
+              <th class="pt text-center">L</th>
+              <th class="pt text-center">PTS</th>
+            </tr>
+            <tr class="table-body">
+              <th class="club"><strong class="position">1</strong><img src="../../assets/club-1.png"  alt="club"> United fs Club</th>
+              <th class="pt text-center">20</th>
+              <th class="pt text-center">0</th>
+              <th class="pt text-center">0</th>
+              <th class="pt text-center">60</th>
+            </tr>
+            <tr class="table-body">
+              <th class="club"><strong class="position">2</strong><img src="../../assets/club-2.png"  alt="club"> Instanbul Sport</th>
+              <th class="pt text-center">19</th>
+              <th class="pt text-center">0</th>
+              <th class="pt text-center">1</th>
+              <th class="pt text-center">57</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">3</strong><img src="../../assets/club-3.png"  alt="club"> Inter Club</th>
+              <th class="pt text-center">17</th>
+              <th class="pt text-center">2</th>
+              <th class="pt text-center">1</th>
+              <th class="pt text-center">55</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">4</strong><img src="../../assets/club-4.png"  alt="club"> Milan FC</th>
+              <th class="pt text-center">15</th>
+              <th class="pt text-center">2</th>
+              <th class="pt text-center">3</th>
+              <th class="pt text-center">47</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">5</strong><img src="../../assets/club-6.png"  alt="club"> Spezia Young</th>
+              <th class="pt text-center">11</th>
+              <th class="pt text-center">5</th>
+              <th class="pt text-center">4</th>
+              <th class="pt text-center">38</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">6</strong><img src="../../assets/club-1.png"  alt="club">MOnza Sport</th>
+              <th class="pt text-center">10</th>
+              <th class="pt text-center">5</th>
+              <th class="pt text-center">5</th>
+              <th class="pt text-center">35</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">7</strong><img src="../../assets/club-7.png"  alt="club"> Geova Football</th>
+              <th class="pt text-center">09</th>
+              <th class="pt text-center">6</th>
+              <th class="pt text-center">5</th>
+              <th class="pt text-center">33</th>
+            </tr>            
+            <tr class="table-body">
+              <th class="club"><strong class="position">8</strong><img src="../../assets/club-8.png"  alt="club"> Sampdoria Sport</th>
+              <th class="pt text-center">5</th>
+              <th class="pt text-center">7</th>
+              <th class="pt text-center">8</th>
+              <th class="pt text-center">22</th>
+            </tr>
+            <tr class="table-body">
+              <th class="club"><strong class="position">9</strong><img src="../../assets/club-9.png"  alt="club">S.S.Lazio</th>
+              <th class="pt text-center">1</th>
+              <th class="pt text-center">10</th>
+              <th class="pt text-center">9</th>
+              <th class="pt text-center">13</th>
+            </tr>
+            <tr class="head">
+
+            </tr>
+          </tbody>
+        </table>
+        <div class="container-bottom text-center">View Full League Table</div>
+      </div>
+      <div class="col-md-6">ciao</div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 
+.container{
+  margin-bottom: 30px;
+}
+.colonna {
+  .container-title {
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+}
+
+.head{
+  background-color: black;
+  color: white;
+}
+
+.table-body{
+  background-color: #F5F5F5;
+}
+.club {
+  text-align: left;
+  border-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.pt {
+  width: 10%;
+  font-size: 20px;
+}
+img{
+  margin-right: 10px;
+  width: 20%;
+}
+.position{
+  margin-right: 10px;
+}
+
+.container-bottom{
+  background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 </style>
