@@ -1,6 +1,13 @@
 <script>
+import { mainMenu } from "../data/menus";
+
 export default {
-  name: "header",
+  name: "Header",
+  data() {
+    return {
+      mainMenu,
+    };
+  },
 };
 </script>
 
@@ -31,21 +38,20 @@ export default {
           </div>
         </div>
         <div class="bottom-bar">
-          <a href="#">HOME</a>
-          <a href="#">FIXTURES & RESULTS</a>
-          <a href="#">LEAGUE TABLE</a>
-          <a href="#">PLAYERS</a>
-          <a href="#">GALLERY</a>
-          <a href="#">BLOG</a>
-          <a href="#">CONTACT</a>
+          <ul>
+            <li v-for="(link, index) in mainMenu" :key="index">
+              <a :href="link.href">{{ link.text }}</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="title">
-        <h1 class="text-center">Welcome to</h1><br>
+        <h1 class="text-center">Welcome to</h1>
+        <br />
         <h1 class="text-center title-2">FootBall Club</h1>
-        <p class="text-center"> Private FootBall matches</p>
+        <p class="text-center">Private FootBall matches</p>
         <a href="#" class="d-flex">
-        <button> Learn More<i class="fa-solid fa-arrow-right"></i></button>
+          <button>Learn More<i class="fa-solid fa-arrow-right"></i></button>
         </a>
       </div>
     </div>
@@ -53,39 +59,37 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-.slide{
+.slide {
   height: 90vh;
   color: white;
   background-image: url(../assets/slider1-1.jpg);
-  background-position: center; 
+  background-position: center;
   background-size: 100%;
-  .title{
+  .title {
     margin: -65px 85px 0px 85px;
   }
-  h1{
+  h1 {
     font-size: 6rem;
   }
-  .title-2{
+  .title-2 {
     margin-top: -35px;
   }
-  a{
+  a {
     justify-content: center;
     text-decoration: none;
-    button{
+    button {
       background: #00000000;
       color: #ffffff;
       border: 1px solid white;
       padding: 20px 60px;
       border-radius: 2rem;
-      i{
+      i {
         font-size: 10px;
         margin-left: 5px;
       }
-      }
     }
   }
-
+}
 
 .header {
   flex-wrap: wrap;
@@ -106,7 +110,7 @@ export default {
 .sponsor {
   margin-top: 5%;
 }
-.nike{
+.nike {
   margin-right: -65px;
   position: sticky;
   z-index: 1;
@@ -128,29 +132,34 @@ export default {
 .bottom-bar {
   margin: 0, auto;
   padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0px 30px 0px 30px;
+      font-weight: bold;
+      display: block;
+      padding: 10px;
+      font-size: 13px;
+      text-decoration: none;
+      color: white;
+      &::after {
+        content: "";
+        height: 4px;
+        width: 0%;
+        transition: width 0.3s;
+        display: block;
+        background-color: white;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    a{
+      color: inherit;
+    }
+    }
+  }
 }
 
-.bottom-bar a {
-  margin: 0px 30px 0px 30px;
-  font-weight: bold;
-  display: block;
-  padding: 10px;
-  font-size: 13px;
-  text-decoration: none;
-  color: white;
-  &::after {
-    content: "";
-    height: 4px;
-    width: 0%;
-    transition: width 0.3s;
-    display: block;
-    background-color: white;
-  }
-  &:hover::after {
-    width: 100%;
-  }
-}
 </style>
